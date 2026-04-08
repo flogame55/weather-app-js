@@ -33,7 +33,7 @@
     เปิดไฟล์ `index.html` บน Browser ของคุณได้เลย!
 
 ## 📸 Preview
-![Weather App Screenshot]([https://via.placeholder.com/600x300?text=Weather+App+Preview](https://github.com/flogame55/weather-app-js/blob/6d9d1c0249c984a4f18cedfa048c2f094cb73098/Screenshot%202026-04-08%20213810.png))
+![image alt]([https://via.placeholder.com/600x300?text=Weather+App+Preview](https://github.com/flogame55/weather-app-js/blob/6d9d1c0249c984a4f18cedfa048c2f094cb73098/Screenshot%202026-04-08%20213810.png))
 
 ---
 **Developed by [Jirayu Promyoun]**
