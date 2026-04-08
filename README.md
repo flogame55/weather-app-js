@@ -27,14 +27,14 @@
 3.  **ตั้งค่าในโค้ด:**
     เปิดไฟล์ `script.js` และแก้ไขบรรทัดแรก:
     ```javascript
-    const appKey = "ใส่ API Key ของคุณที่นี่";
+    const appKey = "ไปเอา API Key ของ OpenWeatherMap มาใส่ตรงนี้";
     ```
 4.  **รันโปรเจค:**
     เปิดไฟล์ `index.html` บน Browser ของคุณได้เลย!
 
 ## 📸 Preview
 *(คุณสามารถแคปภาพหน้าจอโปรเจคของคุณมาใส่ในโฟลเดอร์แล้วแก้ลิงก์ตรงนี้ได้)*
-![Weather App Screenshot](https://via.placeholder.com/600x300?text=Weather+App+Preview)
+![Weather App Screenshot]([https://via.placeholder.com/600x300?text=Weather+App+Preview](https://github.com/flogame55/weather-app-js/blob/6d9d1c0249c984a4f18cedfa048c2f094cb73098/Screenshot%202026-04-08%20213810.png))
 
 ---
 **Developed by [Jirayu Promyoun]**
