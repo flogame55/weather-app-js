@@ -1,5 +1,3 @@
-const appKey = "ไปเอา API Key ของ OpenWeatherMap มาใส่ตรงนี้";
-
 const searchButton = document.querySelector("#search-btn");
 const searcInput = document.querySelector("#search-txt");
 const cityName = document.querySelector("#city-name");
@@ -18,21 +16,27 @@ function enterPressed(event){
 
 function findWeatherDetails(){
 
-    if (appKey === "ไปเอา API Key ของ OpenWeatherMap มาใส่ตรงนี้") {
-        alert("กรุณากำหนด OpenWeatherMap API Key ของคุณในไฟล์ script.js");
+    if (typeof CONFIG === 'undefined' || CONFIG.WEATHER_API_KEY === "YOUR_OPENWEATHERMAP_API_KEY_HERE" || CONFIG.WEATHER_API_KEY === "ไปเอา API Key ของ OpenWeatherMap มาใส่ตรงนี้") {
+        alert("กรุณากำหนด OpenWeatherMap API Key ของคุณในไฟล์ config.js");
         return;
     }
 
     if(searcInput.value === ""){
         alert("Please enter a city name");
-}else{
-    const searchLink = "https://api.openweathermap.org/data/2.5/weather?q=" + searcInput.value + "&appid=" + appKey;
-    httpRequestAsync(searchLink , theRespone);
+    }else{
+        const searchLink = "https://api.openweathermap.org/data/2.5/weather?q=" + encodeURIComponent(searcInput.value) + "&appid=" + CONFIG.WEATHER_API_KEY;
+        httpRequestAsync(searchLink , theRespone);
     }
 }
 
 function theRespone(respone) {
     const jsonObject = JSON.parse(respone);
+    
+    if (jsonObject.cod && jsonObject.cod !== 200 && jsonObject.cod !== "200") {
+        alert("Error: " + jsonObject.message);
+        return;
+    }
+
     cityName.innerHTML = jsonObject.name;
     icon.src = "https://openweathermap.org/img/w/" + jsonObject.weather[0].icon + ".png";
     temperature.innerHTML = parseInt(jsonObject.main.temp - 273) + "°C";

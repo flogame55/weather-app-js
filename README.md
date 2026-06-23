@@ -20,17 +20,19 @@
 
 1.  **Clone โปรเจค:**
     ```bash
-    git clone [https://github.com/ช](https://github.com/ช)ื่อUserของคุณ/weather-app-js.git
+    git clone https://github.com/flogame55/weather-app-js.git
     ```
 2.  **รับ API Key:**
     ไปที่ [OpenWeatherMap](https://openweathermap.org/) เพื่อสมัครสมาชิกและคัดลอก API Key ของคุณ
-3.  **ตั้งค่าในโค้ด:**
-    เปิดไฟล์ `script.js` และแก้ไขบรรทัดแรก:
+3.  **ตั้งค่า API Key:**
+    คัดลอกไฟล์ `config.example.js` และตั้งชื่อใหม่เป็น `config.js` จากนั้นใส่ API Key ของคุณ:
     ```javascript
-    const appKey = "ไปเอา API Key ของ OpenWeatherMap มาใส่ตรงนี้";
+    const CONFIG = {
+        WEATHER_API_KEY: "ใส่ API Key ของคุณตรงนี้"
+    };
     ```
-4.  **รันโปรเจค:**
-    เปิดไฟล์ `index.html` บน Browser ของคุณได้เลย!
+4.  **ทดสอบรันในเครื่อง (Local):**
+    เพียงแค่เปิดไฟล์ `index.html` บน Browser ของคุณ หรือใช้ Live Server ก็สามารถใช้งานได้ทันที (รองรับการรันบนทุก Platform เช่น GitHub Pages, Netlify หรือ Host ทั่วไป)
 
 ## 📸 Preview
 ![image alt](https://github.com/flogame55/weather-app-js/blob/6d9d1c0249c984a4f18cedfa048c2f094cb73098/Screenshot%202026-04-08%20213810.png)
