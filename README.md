@@ -32,7 +32,7 @@
     };
     ```
 4.  **ทดสอบรันในเครื่อง (Local):**
-    เพียงแค่เปิดไฟล์ `index.html` บน Browser ของคุณ หรือใช้ Live Server ก็สามารถใช้งานได้ทันที (รองรับการรันบนทุก Platform เช่น GitHub Pages, Netlify หรือ Host ทั่วไป)
+    เพียงแค่เปิดไฟล์ `index.html` บน Browser ของคุณ หรือใช้ Live Server ก็สามารถใช้งานได้ทันที 
 
 ## 📸 Preview
 ![image alt](https://github.com/flogame55/weather-app-js/blob/6d9d1c0249c984a4f18cedfa048c2f094cb73098/Screenshot%202026-04-08%20213810.png)
