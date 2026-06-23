@@ -2,6 +2,6 @@
   "name": "weather-app",
   "version": "1.0.0",
   "scripts": {
-    "build": "echo \"const CONFIG = { WEATHER_API_KEY: '${WEATHER_API_KEY}' };\" > config.js"
+    "build": "echo \"const CONFIG = { WEATHER_API_KEY: '${WEATHER_API_KEY}' };\" > public/config.js"
   }
 }
